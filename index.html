@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>roof</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/index_style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/kxbdSuperMarquee.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	//nav
+	$('nav>ul>li').hover(function(){
+		$(this).children('a').addClass('active')
+		$(this).find('.subnav').stop().slideDown()
+	},function(){
+		$('nav>ul>li>a').removeClass('active')
+		$('.subnav').stop().slideUp()
+	})
+	//banner
+	$('.banner_pic').kxbdSuperMarquee({
+		distance:1170,
+		time:3,
+		navId:'.banner_num',
+		direction:'left'
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="bg">
+	<div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+	<div class="bg4"></div>
+	<div class="bg5"></div>
+</div>
+<div id="content">
+	<div id="top">
+    	<p class="fl">Call us:<span>(800)2345-6789</span></p>
+        <div class="icons fr">
+        	<div class="fl"><a href="#"></a></div>
+            <div class="fl icons2"><a href="#"></a></div>
+        </div>
+    </div>
+    <header>
+    	<div class="logo fl"><img src="images/logo_03.jpg"/></div>
+        <nav class="fr">
+        	<ul>
+            	<li><a href="#" class="home">HOME</a></li>
+            	<li><a href="#">ABOUT</a>
+					<ul class="subnav">
+            			<li><a href="#">history</a></li>
+            			<li><a href="#">team</a></li>
+            			<li><a href="#">FAQs</a></li>
+            			<li><a href="#">template settings</a></li>
+            			<li><a href="#">forum</a></li>
+					</ul>
+				</li>
+            	<li><a href="#">SERVICES</a></li>
+            	<li><a href="#">NEWS</a></li>
+            	<li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div id="banner">
+		<div class="banner_pic">
+			<ul>
+				<li><img src="images/banner.jpg"/></li>
+				<li><img src="images/banner_03.jpg"/></li>
+				<li><img src="images/banner_pic2.jpg"/></li>
+				<li><img src="images/banner4.jpg"/></li>
+			</ul>
+		</div>
+		<div class="banner_num"></div>
+	</div>
+	<div id="main">
+		<div class="main_top">
+			<div class="repair main_top_mar">
+				<h3>roof<span>repair</span></h3>
+				<p>Lorem ipsum dolor sit amet conse ctetur adip isicing elit sed do eius mod tempor.</p>
+			</div>
+			<div class="repair mainten main_top_mar">
+				<h3>roof<span>maintenance</span></h3>
+				<p>Lorem ipsum dolor sit amet conse ctetur adip isicing elit sed do eius mod tempor.</p>
+			</div>
+			<div class="repair cleaning">
+				<h3>eavestrogh<span>cleaning</span></h3>
+				<p>Lorem ipsum dolor sit amet conse ctetur adip isicing elit sed do eius mod tempor.</p>
+			</div>
+		</div>
+        <div class="solving">
+        	<h4>SOLVING ABY OF <span>YOUR ROOFING</span> PROBLEM</h4>
+            <div class="sol_con">
+                <div class="fl">
+                    <p><span>Dolor sit amet conse ctetur adipisicing elit</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident.</p>
+                    <p><span>Lorem ipsum dolor sit amet conse ctetur adipisicing elit</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute dolor in repehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.</p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+                <div class="fr">
+                    <p><span>Dolor sit amet conse ctetur adipisicing elit</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nosturd exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident.</p>
+                    <ul>
+                    	<li><a href="#">Lorem ipsum dolor sit amet conse ctetur adipisicing</a></li>
+                    	<li><a href="#">Elit sed do eiusmod tempor incididunt ut labore</a></li>
+                    	<li><a href="#">Et dolore magna aliqua enim ad minim veniam</a></li>
+                    	<li><a href="#">Quis nostrud exercitation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="our">
+        	<h4>OUR SERVICES</h4>
+            <div class="our_con">
+            	<div class="our_con_le fl">
+                	<div class="pic">
+                    	<p>Lorem ipsum dolor sit amet <br />conse ctetur adipisicing elit</p>
+                    </div>
+                    <p class="txt">Elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            	<div class="our_con_le fl">
+                	<div class="pic" id="pic2">
+                    	<p>Lorem ipsum dolor sit amet <br />conse ctetur adipisicing elit</p>
+                    </div>
+                    <p class="txt">Elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            	<div class="our_con_le fl">
+                	<div class="pic" id="pic3">
+                    	<p>Lorem ipsum dolor sit amet <br />conse ctetur adipisicing elit</p>
+                    </div>
+                    <p class="txt">Elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            	<div class="fl">
+                	<div class="pic" id="pic4">
+                    	<p>Lorem ipsum dolor sit amet <br />conse ctetur adipisicing elit</p>
+                    </div>
+                    <p class="txt">Elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                </div>
+            </div>
+        </div>
+	</div>
+    <footer>
+    	<div class="footer_con">
+        	<div class="fl">
+            	<p>8901 Marmora Road, Glasgow, D04 89GR</p>
+            </div>
+        	<div class="fl">
+            	<p>Call us:<span>(800)2345-6789</span></p>
+            </div>
+        	<div class="fl">
+            	<p class="email"><a href="mailto:Admin@demolink.org">Admin@demolink.org</a></p>
+            </div>
+        </div>
+        <p class="copy">Roof Repair &copy; 2014.Privacy Policy</p>
+    </footer>
+</div>
+</body>
+</html>
